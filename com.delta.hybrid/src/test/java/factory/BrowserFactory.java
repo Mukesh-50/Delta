@@ -13,10 +13,10 @@ public class BrowserFactory
 {
 
 	
-	static WebDriver driver;
+	 WebDriver driver;
 	public static final String URL = "https://" + DataProviderFactory.getConfig().getUSERNAME() + ":" + DataProviderFactory.getConfig().getAUTOMATE_KEY() + "@hub-cloud.browserstack.com/wd/hub";
 	
-	public static WebDriver getBrowser(String browserName, String browserVersion, String osVersion)
+	public  WebDriver getBrowser(String browserName, String browserVersion, String osVersion)
 	{
 		
 		try {

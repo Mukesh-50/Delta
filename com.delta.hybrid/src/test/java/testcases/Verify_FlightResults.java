@@ -23,7 +23,7 @@ WebDriver driver;
 	public void setUP(String browserName, String browserVersion, String osVersion)
 	{
 		Reporter.log("*****Waiting for Browser to launch*****",true);
-		 driver=BrowserFactory.getBrowser(browserName, browserVersion, osVersion);
+		 driver=new BrowserFactory().getBrowser(browserName, browserVersion, osVersion);
 		 Reporter.log("*****Browser started*****");
 	}
 	
