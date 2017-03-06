@@ -82,8 +82,7 @@ public class Delta_HomePage {
 	public void hotelLocationCode() throws InterruptedException
 	{
 		 hotelLocation.sendKeys("BOM");
-		 Thread.sleep(2000);
-		 new Actions(driver).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).build().perform();
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='Mumbai, India, IN (BOM)']"))).click(); 
 	}
 	
 	public void checkInDate(int days) throws InterruptedException
