@@ -54,8 +54,7 @@ WebDriver driver;
 		
 		Delta_HotelResultsPage hotelResultsPage =  PageFactory.initElements(driver, Delta_HotelResultsPage.class);
 		
-		hotelResultsPage.popUpHanding();
-	 
+	
 		Helper.NoOfHotelResults(driver);
 		
 		
